@@ -1,0 +1,63 @@
+2a1
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fibonacci</h1>
+    <script>
+        
+        var n=prompt('enter the number:',0);
+       var a=0;
+       var b=1;
+        for(var i=1;i<=n;i++){
+            document.write(a+"<br/>");
+            var c=a+b;
+            a=b;
+            b=c;
+        }
+    </script>
+</body>
+</html>
+2a2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i,j,k,str,n,pro;
+        n=prompt("enter the range=");
+        for(k=1;k<=n;k++){ 
+            str="";
+            for(i=1;i<=10;i++){
+                pro=k*i;
+                j=Math.pow(pro,2);
+                str +=k+"*"+i+"="+pro+"-----"+j+"\n";
+            }
+            alert(str);
+        }
+    </script>
+</body>
+</html>
+2b
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random number is</h1>
+    <script>
+        document.write(Math.floor((Math.random()*10)+1));
+    </script>
+</body>
+</html>
